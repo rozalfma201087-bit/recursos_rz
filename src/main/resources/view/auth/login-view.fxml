@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.cisaacap.redchapina.controller.auth.LoginController">
+    <children>
+        <Pane prefHeight="500.0" prefWidth="400.0">
+            <children>
+                <Label layoutX="161.0" layoutY="80.0" text="Iniciar Sesión" />
+
+                <Label layoutX="108.0" layoutY="178.0" text="Nombre de usuario:" />
+                <TextField fx:id="txtUsername" layoutX="110.0" layoutY="195.0" prefWidth="200.0" />
+
+                <Label layoutX="105.0" layoutY="242.0" text="Contraseña:" />
+                <PasswordField fx:id="txtPassword" layoutX="110.0" layoutY="259.0" prefWidth="200.0" />
+
+                <Button fx:id="btnLogin" layoutX="157.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleLogin" text="Iniciar Sesión" />
+            <Hyperlink layoutX="128.0" layoutY="386.0" onAction="#handleIrRegister" text="¿No tienes cuenta? Registrate" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
